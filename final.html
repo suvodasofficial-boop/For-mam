@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Mam ❤️</title>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&family=Great+Vibes&display=swap');
+
+html,body{margin:0;width:100%;height:100%;font-family:'Cormorant Garamond',Georgia,serif}
+body{background:linear-gradient(135deg,#160b16,#5b1839);color:white}
+.page{display:none;min-height:100vh;align-items:center;justify-content:center;text-align:center;padding:20px;box-sizing:border-box}
+.page.active{display:flex}
+.card{width:min(620px,92vw);padding:35px 25px;background:#fff;color:#472334;border-radius:25px;box-shadow:0 20px 60px #0008}
+h1{font-family:'Dancing Script',cursive;font-size:clamp(48px,9vw,72px);color:#c33165;line-height:1.05}
+h2{font-family:'Dancing Script',cursive;font-size:clamp(34px,6vw,46px);line-height:1.15}
+p{font-size:20px;line-height:1.55}
+button{border:0;border-radius:30px;padding:15px 25px;margin:8px;background:#df3f72;color:white;font-weight:bold;font-size:16px;cursor:pointer}
+button:hover{opacity:.85}
+.choice-vanish{pointer-events:none;animation:choiceFade .8s ease forwards}
+@keyframes choiceFade{0%{opacity:1;transform:scale(1)}60%{opacity:.35;transform:scale(.96)}100%{opacity:0;transform:scale(.88)}}
+.envelope{margin:auto;width:min(400px,85vw);height:240px;background:#d6a77f;display:flex;align-items:center;justify-content:center;cursor:pointer;border-radius:8px}
+.letter{background:#fff5df;color:#493126;padding:28px;width:75%}
+.case{background:#39231c;color:#fff0dc;padding:22px;border-radius:10px;text-align:left}
+.case p{display:flex;justify-content:space-between;border-bottom:1px dashed #987158;padding:8px}
+.paper{background:#fff7f3;text-align:left}
+.night{background:radial-gradient(circle,#593453,#140b1e)}
+.big{font-size:70px}
+.heart{position:fixed;bottom:-30px;animation:up 5s linear forwards}
+@keyframes up{to{transform:translateY(-110vh);opacity:0}}
+</style>
+</head>
+<body>
+
+<div class="page active" id="p0">
+<div>
+<p>To, Mam ♡</p>
+<div class="envelope" onclick="startMusic(); next(1)">
+<div class="letter"><b>DO NOT OPEN</b><br><br>unless you're ready to find out something... ❤️</div>
+</div>
+<p>Click the envelope</p>
+</div>
+</div>
+
+<div class="page" id="p1"><div class="card">
+<div style="font-size:55px">🥺</div>
+<h1>Hey, Mam ❤️</h1>
+<p>I made a little something for you.</p>
+<p>It's not just a sorry.<br><b>It's a whole story.</b></p>
+<p>And unfortunately, the main character is an idiot named Suvo. 🥲</p>
+<button onclick="next(2)">Start →</button>
+</div></div>
+
+<div class="page" id="p2"><div class="card">
+<p>🚨 IMPORTANT NOTICE 🚨</p>
+<h2>The Case of the Angry Mam</h2>
+<div class="case">
+<p><b>Victim</b><span>Mam</span></p>
+<p><b>Accused</b><span>Suvo</span></p>
+<p><b>Crime</b><span>Being an idiot</span></p>
+<p><b>Evidence</b><span>Unfortunately, quite a lot.</span></p>
+</div>
+<button onclick="next(3)">🔍 Investigate the case →</button>
+</div></div>
+
+<div class="page" id="p3"><div class="card">
+<p>EVIDENCE #1</p><h2>Exhibit A</h2>
+<p>The suspect said things he shouldn't have said.</p>
+<p><b>Suspect:</b> “Yes. I was stupid.” 😭</p>
+<button onclick="next(2)">← Previous</button>
+<button onclick="next(4)">Next Evidence →</button>
+</div></div>
+
+<div class="page" id="p4"><div class="card">
+<p>EVIDENCE #2</p><h2>Exhibit B</h2>
+<p>I never wanted to hurt you.</p>
+<p><b>But being angry isn't an excuse.</b></p>
+<p>If I hurt you, I should have handled things better.</p>
+<button onclick="next(3)">← Previous</button>
+<button onclick="next(5)">Next Evidence →</button>
+</div></div>
+
+<div class="page" id="p5"><div class="card">
+<p>EVIDENCE #3</p><h2>Exhibit C ❤️</h2>
+<p>☑ Thinks about you too much</p>
+<p>☑ Wants to make things right</p>
+<p>☑ Misses you</p>
+<p>☑ Wants you happy</p>
+<p>☑ You matter</p>
+<button onclick="next(4)">← Previous</button>
+<button onclick="next(6)">Deliver Verdict →</button>
+</div></div>
+
+<div class="page" id="p6"><div class="card">
+<p>THE PEOPLE v. SUVO</p>
+<h2>⚖️ THE VERDICT</h2>
+<div style="font-size:48px;color:#c52e4e;font-weight:bold">GUILTY.</div>
+<p>Guilty of being an absolute idiot. 🥲</p>
+<div class="case">
+<b>Recommended punishment:</b>
+<ol><li>Apologize properly.</li><li>Never repeat the stupidity.</li><li>Give Mam unlimited hugs. ❤️</li><li>Always try to be better.</li></ol>
+</div>
+<button onclick="next(7)">Proceed to sentencing →</button>
+</div></div>
+
+<div class="page" id="p7"><div class="card paper">
+<p style="text-align:center">NO MORE JOKES</p>
+<h2>Okay, jokes aside...</h2>
+<p>Mam,</p>
+<p>I know saying “sorry” doesn't magically undo what happened. I just want you to know that hurting you was never what I wanted.</p>
+<p>Sometimes I say things when I'm angry that I wish I could take back immediately. If I could rewind that moment, I would.</p>
+<p>I'm sorry. Not to win an argument. Not to force everything to become normal immediately.</p>
+<p><b>I'm sorry because you're important to me. ❤️</b></p>
+<p class="signature" style="text-align:right">— Suvo</p>
+<button onclick="next(8)">Continue →</button>
+</div></div>
+
+<div class="page night" id="p8"><div class="card" style="background:#ffffff18;color:white">
+<p>ONE LAST QUESTION</p>
+<h1 style="color:#ff91ad">So... Mam...</h1>
+<h2>Can this idiot have another chance? 🥺</h2>
+<button id="yesBtn" onclick="next(9)">❤️ Of course</button>
+<button id="maybeBtn" onclick="vanishChoice(this,'maybe')">🥺 Maybe...</button>
+<button id="noBtn" onclick="vanishChoice(this,'no')">💔 Absolutely not</button>
+<p id="answer"></p>
+</div></div>
+
+<div class="page night" id="p9"><div class="card" style="background:#ffffff18;color:white">
+<div class="big">💗</div>
+<h1 style="color:#ff91ad">Case Closed. ❤️</h1>
+<h2>Mam forgave Suvo.</h2>
+<p>And somewhere between the apology</p>
+<p>and the forgiveness,</p>
+<p>Suvo fell a little more in love with Mam.</p>
+<p>Thank you for staying.</p>
+<p>Thank you for understanding.</p>
+<p>And most of all,</p>
+<p>thank you for being <i>you</i>.</p>
+<p><i>— <b>Suvo</b></i></p>
+<button onclick="next(10)">There's a little more →</button>
+</div></div>
+
+<div class="page" id="p10"><div class="card">
+<p>A FEW PROMISES</p>
+<h1>For You, Mam ♡</h1>
+<div style="text-align:left;max-width:520px;margin:0 auto;font-size:20px;line-height:1.55">
+<p><b>I</b> promise to remember<br>
+that your heart is not something to be taken for granted.</p>
+
+<p><b>L</b>et me learn to listen,<br>
+even when you're quiet.</p>
+
+<p><b>O</b>n the difficult days,<br>
+I'll choose gentleness over pride.</p>
+
+<p><b>V</b>ery often, I may get things wrong,<br>
+but I'll never stop trying to get them right.</p>
+
+<p><b>E</b>ven when things aren't easy,<br>
+I'll keep choosing you.</p>
+
+<p><b>Y</b>ou deserve someone who keeps becoming better,<br>
+and I promise I'll keep trying to be that person.</p>
+
+<p><b>O</b>n every ordinary day,<br>
+I'll find another reason to be grateful for you.</p>
+
+<p><b>U</b>ntil the very end,<br>
+I want to be someone worthy of the love you give me.</p>
+
+<p style="text-align:center;font-weight:bold;margin-top:24px">
+Because if you are my favorite part of life,<br>
+I want to become your favorite part of it too.
+</p>
+
+<p class="signature" style="text-align:right">— Suvo</p>
+</div>
+<button onclick="next(0)">↻ Replay</button>
+</div></div>
+
+<audio id="bgMusic" src="song.mp3" preload="auto" loop></audio>
+
+<script>
+function startMusic(){
+  var music=document.getElementById('bgMusic');
+  if(!music) return;
+  music.loop=true;
+  if(music.paused){
+    music.play().catch(function(){ /* user interaction normally permits playback */ });
+  }
+}
+
+function next(n){
+ document.querySelectorAll('.page').forEach(function(x){x.classList.remove('active');});
+ document.getElementById('p'+n).classList.add('active');
+
+ // Reset the final-choice page every time the story is replayed.
+ // This makes Maybe and Absolutely Not reappear after pressing Replay.
+ if(n===8){
+   var maybeBtn=document.getElementById('maybeBtn');
+   var noBtn=document.getElementById('noBtn');
+   var answer=document.getElementById('answer');
+   if(maybeBtn){
+     maybeBtn.style.display='';
+     maybeBtn.classList.remove('choice-vanish');
+   }
+   if(noBtn){
+     noBtn.style.display='';
+     noBtn.classList.remove('choice-vanish');
+   }
+   if(answer) answer.innerHTML='';
+ }
+
+ if(n>=8){burst();}
+}
+function vanishChoice(btn,type){
+  if(btn.classList.contains('choice-vanish')) return;
+  btn.classList.add('choice-vanish');
+  setTimeout(function(){ btn.style.display='none'; }, 800);
+  var a=document.getElementById('answer');
+  setTimeout(function(){
+    if(type==='maybe'){
+      a.innerHTML='That option disappeared. 😌<br>Maybe there is only one answer left...';
+    }else{
+      a.innerHTML='Nope, that option disappeared too. 😭<br>The accused is running out of excuses.';
+    }
+  }, 650);
+}
+document.getElementById('maybeBtn').addEventListener('mouseenter',function(){
+  vanishChoice(this,'maybe');
+});
+document.getElementById('noBtn').addEventListener('mouseenter',function(){
+  vanishChoice(this,'no');
+});
+function heart(){
+ var h=document.createElement('span');
+ h.className='heart';
+ h.textContent=['❤️','💗','💕','💖','✨'][Math.floor(Math.random()*5)];
+ h.style.left=Math.random()*100+'vw';
+ h.style.fontSize=(16+Math.random()*22)+'px';
+ document.body.appendChild(h);
+ setTimeout(function(){h.remove()},6000);
+}
+function burst(){for(var i=0;i<20;i++){setTimeout(heart,i*70);}}
+setInterval(heart,1000);
+</script>
+</body>
+</html>
